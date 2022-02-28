@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
-const PFRV = new Schema({
+const PTOSchema = new Schema({
 	"requesterId" : {type: Number, required: false},
 	"requesteeId" : {type: Number, required: false},
     "type" : {type: String, required: false},
@@ -14,5 +14,5 @@ const PFRV = new Schema({
 	timestamps: true,
 });
 
-const User = mongoose.model('User', noteSchema);
-export default User 
+const PTO = mongoose.model('PTO', PTOSchema);
+export default PTO

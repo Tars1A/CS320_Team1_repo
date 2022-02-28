@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
-const PFRV = new Schema({
+const PFRVSchema = new Schema({
 	"reviewerId" : {type: Number, required: false},
 	"revieweeId" : {type: Number, required: false},
 	"companyId" : {type: Number, required: false},
@@ -19,5 +19,5 @@ const PFRV = new Schema({
 	timestamps: true,
 });
 
-const User = mongoose.model('User', noteSchema);
-export default User 
+const PFRV = mongoose.model('PFRV', PFRVSchema);
+export default PFRV
