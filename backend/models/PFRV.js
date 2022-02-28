@@ -3,9 +3,9 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const PFRV = new Schema({
-	"senderEmail" : {type: String, required: true},
-	"receiverEmail" : {type: Integer, required: false},
-	"companyId" : {type: Integer, required: false},
+	"reviewerId" : {type: Number, required: false},
+	"revieweeId" : {type: Number, required: false},
+	"companyId" : {type: Number, required: false},
 	"companyName" : {type: String, required: false},
 	"startDate" : {type: Date, required: false},
 	"endDate" : {type: Date, required: false},
