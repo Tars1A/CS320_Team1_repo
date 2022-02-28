@@ -3,16 +3,16 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-	"firstName" : {type: String, required: true},
-	"lastName" : {type: String, required: true},
-	"employeeId" : {type: Integer, required: false},
-	"email" : {type: Integer, required: true},
-	"companyId" : {type: Integer, required: false},
+	"firstName" : {type: String, required: false},
+	"lastName" : {type: String, required: false},
+	"employeeId" : {type: Number, required: false},
+	"email" : {type: String, required: false},
+	"companyId" : {type: Number, required: false},
 	"companyName" : {type: String, required: false},
 	"positionTitle" : {type: String, required: false},
 	"startDate" : {type: Date, required: false},
 	"isManager" : {type: Boolean, required: false},
-	"password" : {type: String, required: true}
+	"password" : {type: String, required: false}
 }, {
 	timestamps: true,
 });
