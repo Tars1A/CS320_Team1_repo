@@ -5,7 +5,7 @@ const passport = require('passport');
 
 
 // user scehma
-const User = require('../CS320_Team1_repo/backend/models/user');
+const User = require('../../models/user');
 
 // Login Page
 router.get('/login', (req, res) => res.render('login'));
